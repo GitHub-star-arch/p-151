@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="move.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-assets-item id="car" src="./Car.glb"/>
+            </a-assets>
+            <a-camera position="0 0 0"/>
+            <a-entity position="0 0 -20" gltf-model="#car" id="car" scale="0.15 0.15 0.15" move-box>
+                <a-cylinder position="-10 15 3" rotation="0 0 90" radius="2" color="#2f2f30" height="5" fall-down/>
+                <a-cylinder position="0 0 -6" rotation="0 0 0" radius="2" color="#2f2f30" height="5"/>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
